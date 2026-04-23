@@ -1,6 +1,138 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
+<style>
+ /* FONT */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+:root {
+  --bg: #0b0f1a;
+  --card: rgba(255,255,255,0.04);
+  --border: rgba(255,255,255,0.08);
+  --text: #e5e7eb;
+  --accent: #60a5fa;
+}
+
+/* GLOBAL */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: radial-gradient(circle at 20% 20%, #111827, #020617);
+  color: var(--text);
+}
+
+/* SECTION */
+.section {
+  padding: 90px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* TITLE */
+h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 40px;
+  color: #f1f5f9;
+}
+
+/* GARIS HALUS */
+h2::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  background: var(--accent);
+  margin-top: 10px;
+  opacity: 0.6;
+}
+
+/* HERO IMAGE */
+.section > img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--border);
+  margin-bottom: 20px;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 22px;
+}
+
+/* CARD */
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 14px;
+  transition: all 0.25s ease;
+}
+
+/* HOVER HALUS */
+.card:hover {
+  transform: translateY(-6px);
+  border-color: var(--accent);
+}
+
+/* FOTO */
+.card img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+/* NAMA */
+.card p {
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+/* GALLERY */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  transition: 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.02);
+}
+
+/* TEXT */
+p {
+  color: #cbd5f5;
+  max-width: 600px;
+  margin: auto;
+}
+
+/* SMOOTH SCROLL */
+html {
+  scroll-behavior: smooth;
+}
+</style>
+</head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Kelas VIA</title>
