@@ -1,0 +1,111 @@
+/* IMPORT FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: white;
+  text-align: center;
+}
+
+/* SECTION */
+.section {
+  padding: 80px 20px;
+  animation: fadeIn 1s ease;
+}
+
+/* JUDUL */
+h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+h2::after {
+  content: '';
+  width: 60px;
+  height: 4px;
+  background: #38bdf8;
+  display: block;
+  margin: 10px auto;
+  border-radius: 10px;
+}
+
+/* GRID */
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+/* CARD */
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 15px;
+  border-radius: 20px;
+  width: 140px;
+  backdrop-filter: blur(10px);
+  transition: 0.3s;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+}
+
+/* FOTO BULAT */
+.card img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #38bdf8;
+}
+
+/* NAMA */
+.card p {
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+/* GALLERY */
+.gallery img {
+  width: 220px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* HERO FOTO */
+.section img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 4px solid #38bdf8;
+  box-shadow: 0 0 25px #38bdf8;
+}
+
+/* ANIMASI */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
